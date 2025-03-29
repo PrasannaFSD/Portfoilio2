@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Building a Personal Portfolio with a Contact Form</title>
+    <style>
+    header {
+        background-color: #4CAF50; /* Green */
+        padding: 1em;
+      }
+      
+      header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      #about {
+  text-align: center;
+  background-color: #f4f4f4; /* Light gray */
+  padding: 2em;
+}
+
+#about img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+#projects {
+  background-color: #ffffff;
+  padding: 2em;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.project h3 {
+  color: #4CAF50;
+}
+#contact {
+  background-color: #f4f4f4;
+  padding: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.7em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+    </style>
+      
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="about">
+        <h1>About Me</h1>
+        <img src="my pic.jpg" alt="Prasanna">
+        <p>Hello! I'm Prasanna, a full-stack developer. I specialize in javascript.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Responsive Portfolio Website</h3>
+          <p>A fully responsive personal portfolio website designed using HTML, CSS, and JavaScript. It highlights professional skills, showcases projects, and includes a contact form with validation. Features a mobile-friendly layout with smooth navigation.</p>
+          <a href="https://example.com/responsive-portfolio">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Task Tracker Application</h3>
+          <p>A simple task tracking application built using vanilla JavaScript. Users can add, delete, and mark tasks as completed. LocalStorage integration ensures data persistence even after refreshing the page.</p>
+          <a href="https://example.com/task-tracker">View Project</a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </section>
+                  
+      
+    
+</body>
+</html>
